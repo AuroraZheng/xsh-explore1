@@ -1,0 +1,18 @@
+[
+    {
+      "id": "1",
+      "image": "/images/pic1.jpg",
+      "title": "春天的野餐日记",
+      "username": "小红帽",
+      "avatar": "/images/avatar1.jpg"
+    },
+    {
+      "id": "2",
+      "image": "/images/pic2.jpg",
+      "title": "复古穿搭",
+      "username": "旧物志",
+      "avatar": "/images/avatar2.jpg"
+    }
+    // ... 多复制几条
+  ]
+  
