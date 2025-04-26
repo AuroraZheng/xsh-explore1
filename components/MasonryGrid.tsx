@@ -1,7 +1,11 @@
 import Masonry from "react-masonry-css";
-import Card from "./PostCard";
+import PostCard, { Post } from "./PostCard";
 
-const MasonryGrid = ({ posts }: { posts: any[] }) => {
+interface MasonryGridProps {
+  posts: Post[];
+}
+
+const MasonryGrid: React.FC<MasonryGridProps> = ({ posts }) => {
   const breakpointColumnsObj = {
     default: 4,
     1100: 3,
@@ -16,7 +20,7 @@ const MasonryGrid = ({ posts }: { posts: any[] }) => {
       columnClassName="my-masonry-grid_column"
     >
       {posts.map((post) => (
-        <Card key={post.id} post={post} />
+        <PostCard key={post.id} post={post} />
       ))}
     </Masonry>
   );
