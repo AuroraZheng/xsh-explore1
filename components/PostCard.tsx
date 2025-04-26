@@ -15,17 +15,18 @@ interface PostCardProps {
 
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
   return (
-    <div className="rounded-lg overflow-hidden bg-white hover:shadow-lg transition-shadow duration-200">
+    <div className="rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-shadow duration-200">
       <div className="relative aspect-[3/4]">
         <img 
           src={post.image} 
           alt={post.title} 
           className="w-full h-full object-cover"
+          style={{ borderRadius: '1rem' }}
           loading="lazy"
         />
       </div>
-      <div className="p-2">
-        <h2 className="text-[10px] font-medium line-clamp-2 mb-1">{post.title}</h2>
+      <div className="p-4">
+        <h2 className="text-[10px] font-medium line-clamp-2 mb-3">{post.title}</h2>
         <div className="flex items-center text-[10px] text-gray-500">
           <img 
             src={post.avatar} 
