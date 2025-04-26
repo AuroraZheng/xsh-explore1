@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Post 瀑布流布局 */}
+        {/* Post 瀑布流布局 懒加载*/} 
         <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-2 p-4">
           {posts.map((post) => (
             <div key={post.id} className="mb-2 break-inside-avoid rounded-md overflow-hidden bg-white border border-gray-100 shadow-sm">
